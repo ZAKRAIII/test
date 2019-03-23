@@ -1,4 +1,4 @@
-#define led 2
+#define led 3
 
 void led_setup(){
   pinMode(led, OUTPUT);
@@ -9,4 +9,8 @@ void led_blink(){
     digitalWrite(led, HIGH);delay(500);
     digitalWrite(led, LOW);delay(500);
   }
+}
+
+void led_strobe(){
+  ;
 }
